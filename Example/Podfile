@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GlobostoreAutoUpdate_Example' do
+  pod 'GlobostoreAutoUpdate', :path => '../'
+
+  target 'GlobostoreAutoUpdate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
