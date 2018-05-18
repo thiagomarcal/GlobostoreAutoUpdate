@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D2EC0E7835EF3EA19012D962C743747 /* Pods-GlobostoreAutoUpdate_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D7DE525290F176DCB8805534496722 /* Pods-GlobostoreAutoUpdate_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2769455CF8930B6FE816A0B1DF8FC723 /* GlobostoreAutoUpdate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7860D6789F9293C63986849A32A7A3 /* GlobostoreAutoUpdate-dummy.m */; };
+		3BF7EC689CF9E7CC260C5473589924BD /* Pods-GlobostoreAutoUpdate_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D7F2D188D3D7E4C7E76DFB6B6BA582 /* Pods-GlobostoreAutoUpdate_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DA5372FA21C7256D7BC004A3FDE3048 /* Pods-GlobostoreAutoUpdate_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B412F943478CF29C20E32491586C5E /* Pods-GlobostoreAutoUpdate_Tests-dummy.m */; };
+		AD52A2D7B5BF59340C153E74C0F4267D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		B8132A5F1F5517DEC7D9C661C7B42A94 /* GlobostoreAutoUpdate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D74BCBB10EBD61F5FF880FCA6E0DB4 /* GlobostoreAutoUpdate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB8D082297BE289488507A41082F1147 /* GlobostoreAutoUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD52D6B0BBB0E1A6E83A6DE3983C19F /* GlobostoreAutoUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC5B1DE0AD5673EC5455DEEA45317F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		EDB6560FBCC0872919D89E7AD778D1AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F0834D0BA56FDB0733935C883FA20FFC /* Pods-GlobostoreAutoUpdate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2CB031969FA5A410CDB7C9391BA24F /* Pods-GlobostoreAutoUpdate_Example-dummy.m */; };
+		FDABC199CFBBBA3B3B2CE4784E1630C6 /* GlobostoreAutoUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80462364F381DA554615D3148487D13D /* GlobostoreAutoUpdate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3817D3D17FC2A10D20CFA3548C9CEB47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B364F420A4ED65835CF43EFCE961BA70;
+			remoteInfo = GlobostoreAutoUpdate;
+		};
+		7FE374AB5543441029567A0A4F62F539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8F85637BAD2F973CCE5D2885C47929A;
+			remoteInfo = "Pods-GlobostoreAutoUpdate_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0971C16AA1CC0CC9240F30473FE295A0 /* Pods-GlobostoreAutoUpdate_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlobostoreAutoUpdate_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1EC720C7B034170DE43F47F18DC815A6 /* Pods-GlobostoreAutoUpdate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GlobostoreAutoUpdate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2F9735AE04A910D081997309B5CF4EEB /* Pods-GlobostoreAutoUpdate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobostoreAutoUpdate_Example-frameworks.sh"; sourceTree = "<group>"; };
+		328613A50212661B010D48A117126777 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		472AAC613930B73619727B78A1A24F40 /* Pods-GlobostoreAutoUpdate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlobostoreAutoUpdate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E3D9C9A5E827396D3244822592C7176 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A699F6E2C325A4210910DA4925750A2 /* Pods-GlobostoreAutoUpdate_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobostoreAutoUpdate_Tests-resources.sh"; sourceTree = "<group>"; };
+		5D55631ED0C9880C2326760026564222 /* Pods-GlobostoreAutoUpdate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GlobostoreAutoUpdate_Tests.modulemap"; sourceTree = "<group>"; };
+		5F7860D6789F9293C63986849A32A7A3 /* GlobostoreAutoUpdate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GlobostoreAutoUpdate-dummy.m"; sourceTree = "<group>"; };
+		617C81561D8059083AFCCADEC14F1E34 /* GlobostoreAutoUpdate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = GlobostoreAutoUpdate.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		71A7F0757EC86D29851A4A5E4E95B498 /* Pods-GlobostoreAutoUpdate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobostoreAutoUpdate_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		72B9CCA488C13345A7A2DBAE4219E686 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755A544203ED4FDB4DE3588EEFCF11E3 /* Pods_GlobostoreAutoUpdate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobostoreAutoUpdate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADA022CB195724B5326A4419651B2C0 /* Pods-GlobostoreAutoUpdate_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobostoreAutoUpdate_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7F2CB031969FA5A410CDB7C9391BA24F /* Pods-GlobostoreAutoUpdate_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GlobostoreAutoUpdate_Example-dummy.m"; sourceTree = "<group>"; };
+		7F2E2EF23CC0B2DD06BDD4FB6A6B3E94 /* Pods-GlobostoreAutoUpdate_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GlobostoreAutoUpdate_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		80462364F381DA554615D3148487D13D /* GlobostoreAutoUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GlobostoreAutoUpdate.m; sourceTree = "<group>"; };
+		89D7DE525290F176DCB8805534496722 /* Pods-GlobostoreAutoUpdate_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlobostoreAutoUpdate_Example-umbrella.h"; sourceTree = "<group>"; };
+		8E1B29961CF10F9C5E946CCB3FDCE49F /* Pods-GlobostoreAutoUpdate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobostoreAutoUpdate_Example.release.xcconfig"; sourceTree = "<group>"; };
+		91029442B623CAF646EF1AC3B6BBB6FA /* GlobostoreAutoUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobostoreAutoUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A13622B5BAAA9C9046DAFCD4BCE44281 /* GlobostoreAutoUpdate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlobostoreAutoUpdate-prefix.pch"; sourceTree = "<group>"; };
+		A3E01FA5EC75F679E5A35DA2A10FCBEF /* Pods-GlobostoreAutoUpdate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobostoreAutoUpdate_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A5D74BCBB10EBD61F5FF880FCA6E0DB4 /* GlobostoreAutoUpdate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlobostoreAutoUpdate-umbrella.h"; sourceTree = "<group>"; };
+		B0C32F7CA85FEC3AAD982F4E2FC919DE /* Pods-GlobostoreAutoUpdate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobostoreAutoUpdate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7842E148BA26B0167B92B5FACAA6AD3 /* Pods-GlobostoreAutoUpdate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GlobostoreAutoUpdate_Example.modulemap"; sourceTree = "<group>"; };
+		C0B412F943478CF29C20E32491586C5E /* Pods-GlobostoreAutoUpdate_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GlobostoreAutoUpdate_Tests-dummy.m"; sourceTree = "<group>"; };
+		CD91E10C81C8105C22FD43BECBD96743 /* GlobostoreAutoUpdate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GlobostoreAutoUpdate.modulemap; sourceTree = "<group>"; };
+		CDAEBBA596DB8F6FE94A5E962C259E70 /* Pods-GlobostoreAutoUpdate_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobostoreAutoUpdate_Example-resources.sh"; sourceTree = "<group>"; };
+		D1F55BC8C9483EA5A999766B4F176256 /* Pods_GlobostoreAutoUpdate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobostoreAutoUpdate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F8949F999F3B77AB769C97214B5806 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DCD52D6B0BBB0E1A6E83A6DE3983C19F /* GlobostoreAutoUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GlobostoreAutoUpdate.h; sourceTree = "<group>"; };
+		E2033A0E17CEEBC9F573F220E7A0E8B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DB6542FA876E479CBF4EE5DBB215A7 /* GlobostoreAutoUpdate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GlobostoreAutoUpdate.xcconfig; sourceTree = "<group>"; };
+		F5D7F2D188D3D7E4C7E76DFB6B6BA582 /* Pods-GlobostoreAutoUpdate_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlobostoreAutoUpdate_Tests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DF1D2B655FF300C1305B141B790539A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB6560FBCC0872919D89E7AD778D1AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2355A7955A4F25C1DE0833414FC0E98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC5B1DE0AD5673EC5455DEEA45317F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B9F0EBDE1D8388B14C26D6ADBC6A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD52A2D7B5BF59340C153E74C0F4267D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		74D25D2E2B3EAB246FBB76741B95B9F9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3B101288F73B91BB18B3964C4404FD6 /* GlobostoreAutoUpdate */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		78F7190620AE33660083464A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80462364F381DA554615D3148487D13D /* GlobostoreAutoUpdate.m */,
+				DCD52D6B0BBB0E1A6E83A6DE3983C19F /* GlobostoreAutoUpdate.h */,
+			);
+			name = Classes;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		7BCC26BCED8D590B1B7AC4896A40987F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD91E10C81C8105C22FD43BECBD96743 /* GlobostoreAutoUpdate.modulemap */,
+				E4DB6542FA876E479CBF4EE5DBB215A7 /* GlobostoreAutoUpdate.xcconfig */,
+				5F7860D6789F9293C63986849A32A7A3 /* GlobostoreAutoUpdate-dummy.m */,
+				A13622B5BAAA9C9046DAFCD4BCE44281 /* GlobostoreAutoUpdate-prefix.pch */,
+				A5D74BCBB10EBD61F5FF880FCA6E0DB4 /* GlobostoreAutoUpdate-umbrella.h */,
+				72B9CCA488C13345A7A2DBAE4219E686 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GlobostoreAutoUpdate";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				74D25D2E2B3EAB246FBB76741B95B9F9 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A69B251EA537941442861C3041222D5C /* Products */,
+				930A345269820B34D506FE88EB657D4B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		930A345269820B34D506FE88EB657D4B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5591091C5AD88092473E6F69D6A7D26 /* Pods-GlobostoreAutoUpdate_Example */,
+				9AFEF8F1EE24ADA807FA646C57998581 /* Pods-GlobostoreAutoUpdate_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9AFEF8F1EE24ADA807FA646C57998581 /* Pods-GlobostoreAutoUpdate_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				328613A50212661B010D48A117126777 /* Info.plist */,
+				5D55631ED0C9880C2326760026564222 /* Pods-GlobostoreAutoUpdate_Tests.modulemap */,
+				7F2E2EF23CC0B2DD06BDD4FB6A6B3E94 /* Pods-GlobostoreAutoUpdate_Tests-acknowledgements.markdown */,
+				0971C16AA1CC0CC9240F30473FE295A0 /* Pods-GlobostoreAutoUpdate_Tests-acknowledgements.plist */,
+				C0B412F943478CF29C20E32491586C5E /* Pods-GlobostoreAutoUpdate_Tests-dummy.m */,
+				7ADA022CB195724B5326A4419651B2C0 /* Pods-GlobostoreAutoUpdate_Tests-frameworks.sh */,
+				5A699F6E2C325A4210910DA4925750A2 /* Pods-GlobostoreAutoUpdate_Tests-resources.sh */,
+				F5D7F2D188D3D7E4C7E76DFB6B6BA582 /* Pods-GlobostoreAutoUpdate_Tests-umbrella.h */,
+				B0C32F7CA85FEC3AAD982F4E2FC919DE /* Pods-GlobostoreAutoUpdate_Tests.debug.xcconfig */,
+				71A7F0757EC86D29851A4A5E4E95B498 /* Pods-GlobostoreAutoUpdate_Tests.release.xcconfig */,
+			);
+			name = "Pods-GlobostoreAutoUpdate_Tests";
+			path = "Target Support Files/Pods-GlobostoreAutoUpdate_Tests";
+			sourceTree = "<group>";
+		};
+		A69B251EA537941442861C3041222D5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91029442B623CAF646EF1AC3B6BBB6FA /* GlobostoreAutoUpdate.framework */,
+				755A544203ED4FDB4DE3588EEFCF11E3 /* Pods_GlobostoreAutoUpdate_Example.framework */,
+				D1F55BC8C9483EA5A999766B4F176256 /* Pods_GlobostoreAutoUpdate_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5591091C5AD88092473E6F69D6A7D26 /* Pods-GlobostoreAutoUpdate_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E2033A0E17CEEBC9F573F220E7A0E8B6 /* Info.plist */,
+				B7842E148BA26B0167B92B5FACAA6AD3 /* Pods-GlobostoreAutoUpdate_Example.modulemap */,
+				1EC720C7B034170DE43F47F18DC815A6 /* Pods-GlobostoreAutoUpdate_Example-acknowledgements.markdown */,
+				472AAC613930B73619727B78A1A24F40 /* Pods-GlobostoreAutoUpdate_Example-acknowledgements.plist */,
+				7F2CB031969FA5A410CDB7C9391BA24F /* Pods-GlobostoreAutoUpdate_Example-dummy.m */,
+				2F9735AE04A910D081997309B5CF4EEB /* Pods-GlobostoreAutoUpdate_Example-frameworks.sh */,
+				CDAEBBA596DB8F6FE94A5E962C259E70 /* Pods-GlobostoreAutoUpdate_Example-resources.sh */,
+				89D7DE525290F176DCB8805534496722 /* Pods-GlobostoreAutoUpdate_Example-umbrella.h */,
+				A3E01FA5EC75F679E5A35DA2A10FCBEF /* Pods-GlobostoreAutoUpdate_Example.debug.xcconfig */,
+				8E1B29961CF10F9C5E946CCB3FDCE49F /* Pods-GlobostoreAutoUpdate_Example.release.xcconfig */,
+			);
+			name = "Pods-GlobostoreAutoUpdate_Example";
+			path = "Target Support Files/Pods-GlobostoreAutoUpdate_Example";
+			sourceTree = "<group>";
+		};
+		EF1C773CFC25B0DC7A5C6D5912508251 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				78F7190620AE33660083464A /* Classes */,
+				617C81561D8059083AFCCADEC14F1E34 /* GlobostoreAutoUpdate.podspec */,
+				D6F8949F999F3B77AB769C97214B5806 /* LICENSE */,
+				4E3D9C9A5E827396D3244822592C7176 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F3B101288F73B91BB18B3964C4404FD6 /* GlobostoreAutoUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				EF1C773CFC25B0DC7A5C6D5912508251 /* Pod */,
+				7BCC26BCED8D590B1B7AC4896A40987F /* Support Files */,
+			);
+			name = GlobostoreAutoUpdate;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43FC2B26DA158DB8B259F78DC70CD6B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8132A5F1F5517DEC7D9C661C7B42A94 /* GlobostoreAutoUpdate-umbrella.h in Headers */,
+				BB8D082297BE289488507A41082F1147 /* GlobostoreAutoUpdate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A0BFA635DB42F234326830DA6851838 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF7EC689CF9E7CC260C5473589924BD /* Pods-GlobostoreAutoUpdate_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92040D6E003589040D2A787AB45E53F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D2EC0E7835EF3EA19012D962C743747 /* Pods-GlobostoreAutoUpdate_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		45AA98353A681405BEE52CA40D325FBB /* Pods-GlobostoreAutoUpdate_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B7ABF2C53943A7D13F23D49D0067BD3 /* Build configuration list for PBXNativeTarget "Pods-GlobostoreAutoUpdate_Tests" */;
+			buildPhases = (
+				D2D3E0737F557006C0D1F421D3F180A5 /* Sources */,
+				F2355A7955A4F25C1DE0833414FC0E98 /* Frameworks */,
+				5A0BFA635DB42F234326830DA6851838 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3890E1297DD9DD89367504692BF9D356 /* PBXTargetDependency */,
+			);
+			name = "Pods-GlobostoreAutoUpdate_Tests";
+			productName = "Pods-GlobostoreAutoUpdate_Tests";
+			productReference = D1F55BC8C9483EA5A999766B4F176256 /* Pods_GlobostoreAutoUpdate_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B364F420A4ED65835CF43EFCE961BA70 /* GlobostoreAutoUpdate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93A837643825B4681C46C2598398C2FE /* Build configuration list for PBXNativeTarget "GlobostoreAutoUpdate" */;
+			buildPhases = (
+				73DE2632B45FE7DD7067EF6783402578 /* Sources */,
+				F9B9F0EBDE1D8388B14C26D6ADBC6A50 /* Frameworks */,
+				43FC2B26DA158DB8B259F78DC70CD6B8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlobostoreAutoUpdate;
+			productName = GlobostoreAutoUpdate;
+			productReference = 91029442B623CAF646EF1AC3B6BBB6FA /* GlobostoreAutoUpdate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8F85637BAD2F973CCE5D2885C47929A /* Pods-GlobostoreAutoUpdate_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F335BEC7DBCA44CBCADACBA1476AAEEF /* Build configuration list for PBXNativeTarget "Pods-GlobostoreAutoUpdate_Example" */;
+			buildPhases = (
+				002C2BF7739176430D3276069455F03B /* Sources */,
+				4DF1D2B655FF300C1305B141B790539A /* Frameworks */,
+				92040D6E003589040D2A787AB45E53F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F1647C34D321B8DFC0D0C7C7CFF2E45 /* PBXTargetDependency */,
+			);
+			name = "Pods-GlobostoreAutoUpdate_Example";
+			productName = "Pods-GlobostoreAutoUpdate_Example";
+			productReference = 755A544203ED4FDB4DE3588EEFCF11E3 /* Pods_GlobostoreAutoUpdate_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A69B251EA537941442861C3041222D5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B364F420A4ED65835CF43EFCE961BA70 /* GlobostoreAutoUpdate */,
+				F8F85637BAD2F973CCE5D2885C47929A /* Pods-GlobostoreAutoUpdate_Example */,
+				45AA98353A681405BEE52CA40D325FBB /* Pods-GlobostoreAutoUpdate_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002C2BF7739176430D3276069455F03B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0834D0BA56FDB0733935C883FA20FFC /* Pods-GlobostoreAutoUpdate_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE2632B45FE7DD7067EF6783402578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2769455CF8930B6FE816A0B1DF8FC723 /* GlobostoreAutoUpdate-dummy.m in Sources */,
+				FDABC199CFBBBA3B3B2CE4784E1630C6 /* GlobostoreAutoUpdate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D3E0737F557006C0D1F421D3F180A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA5372FA21C7256D7BC004A3FDE3048 /* Pods-GlobostoreAutoUpdate_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F1647C34D321B8DFC0D0C7C7CFF2E45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GlobostoreAutoUpdate;
+			target = B364F420A4ED65835CF43EFCE961BA70 /* GlobostoreAutoUpdate */;
+			targetProxy = 3817D3D17FC2A10D20CFA3548C9CEB47 /* PBXContainerItemProxy */;
+		};
+		3890E1297DD9DD89367504692BF9D356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GlobostoreAutoUpdate_Example";
+			target = F8F85637BAD2F973CCE5D2885C47929A /* Pods-GlobostoreAutoUpdate_Example */;
+			targetProxy = 7FE374AB5543441029567A0A4F62F539 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		186331CAE0AAFE48C32588EFBD568010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1B29961CF10F9C5E946CCB3FDCE49F /* Pods-GlobostoreAutoUpdate_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobostoreAutoUpdate_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobostoreAutoUpdate_Example/Pods-GlobostoreAutoUpdate_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2109B407E426DF5473BB4012AB7C6281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E01FA5EC75F679E5A35DA2A10FCBEF /* Pods-GlobostoreAutoUpdate_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobostoreAutoUpdate_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobostoreAutoUpdate_Example/Pods-GlobostoreAutoUpdate_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24CF940F90737F034E350047CA94811C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DB6542FA876E479CBF4EE5DBB215A7 /* GlobostoreAutoUpdate.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GlobostoreAutoUpdate/GlobostoreAutoUpdate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GlobostoreAutoUpdate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GlobostoreAutoUpdate/GlobostoreAutoUpdate.modulemap";
+				PRODUCT_MODULE_NAME = GlobostoreAutoUpdate;
+				PRODUCT_NAME = GlobostoreAutoUpdate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DBF1F67136069C2F5E74F22F25E9B6B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A7F0757EC86D29851A4A5E4E95B498 /* Pods-GlobostoreAutoUpdate_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobostoreAutoUpdate_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobostoreAutoUpdate_Tests/Pods-GlobostoreAutoUpdate_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9E803F99D6AEE40E3F1AF8A7A4E5245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DB6542FA876E479CBF4EE5DBB215A7 /* GlobostoreAutoUpdate.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GlobostoreAutoUpdate/GlobostoreAutoUpdate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GlobostoreAutoUpdate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GlobostoreAutoUpdate/GlobostoreAutoUpdate.modulemap";
+				PRODUCT_MODULE_NAME = GlobostoreAutoUpdate;
+				PRODUCT_NAME = GlobostoreAutoUpdate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED8A69AFD8A0550129B852DB419E64DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C32F7CA85FEC3AAD982F4E2FC919DE /* Pods-GlobostoreAutoUpdate_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobostoreAutoUpdate_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobostoreAutoUpdate_Tests/Pods-GlobostoreAutoUpdate_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B7ABF2C53943A7D13F23D49D0067BD3 /* Build configuration list for PBXNativeTarget "Pods-GlobostoreAutoUpdate_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8A69AFD8A0550129B852DB419E64DC /* Debug */,
+				DBF1F67136069C2F5E74F22F25E9B6B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93A837643825B4681C46C2598398C2FE /* Build configuration list for PBXNativeTarget "GlobostoreAutoUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E803F99D6AEE40E3F1AF8A7A4E5245 /* Debug */,
+				24CF940F90737F034E350047CA94811C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F335BEC7DBCA44CBCADACBA1476AAEEF /* Build configuration list for PBXNativeTarget "Pods-GlobostoreAutoUpdate_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2109B407E426DF5473BB4012AB7C6281 /* Debug */,
+				186331CAE0AAFE48C32588EFBD568010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

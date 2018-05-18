@@ -6,13 +6,18 @@
 //  Copyright (c) 2018 thiagomarcal. All rights reserved.
 //
 
+
 #import "GlobostoreAppDelegate.h"
+
 
 @implementation GlobostoreAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+//    GlobostoreAutoUpdate *autoupdate = [[GlobostoreAutoUpdate alloc] init];
+//    autoupdate.validateCurrentVersion;
+    
     return YES;
 }
 

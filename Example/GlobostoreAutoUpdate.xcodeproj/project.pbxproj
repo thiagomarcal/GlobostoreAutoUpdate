@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		668BA5D0E943F01A230DAD02 /* Pods_GlobostoreAutoUpdate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9D0A31AA4A94B115183911 /* Pods_GlobostoreAutoUpdate_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		78F7190A20AE35190083464A /* globostore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78F7190920AE35190083464A /* globostore.plist */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D21519CE48FAE1E875B6AFF4 /* Pods_GlobostoreAutoUpdate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD60EB34E4FFA44306B163B /* Pods_GlobostoreAutoUpdate_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -60,13 +61,14 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78F7190920AE35190083464A /* globostore.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = globostore.plist; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		989AF7AEDFEB07A20B5F7670 /* Pods-GlobostoreAutoUpdate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobostoreAutoUpdate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlobostoreAutoUpdate_Example/Pods-GlobostoreAutoUpdate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9AD5C1EA9522DBC0543F2055 /* Pods-GlobostoreAutoUpdate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobostoreAutoUpdate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlobostoreAutoUpdate_Tests/Pods-GlobostoreAutoUpdate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF5CFAB0446C5A8A7D733581 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C84429B68737ED88A9C03AF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BF5CFAB0446C5A8A7D733581 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C84429B68737ED88A9C03AF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E5E07B9AAC25A91FB6AE9B09 /* Pods-GlobostoreAutoUpdate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobostoreAutoUpdate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlobostoreAutoUpdate_Example/Pods-GlobostoreAutoUpdate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FF7450E40BB90D8A1D21FD8C /* GlobostoreAutoUpdate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GlobostoreAutoUpdate.podspec; path = ../GlobostoreAutoUpdate.podspec; sourceTree = "<group>"; };
+		FF7450E40BB90D8A1D21FD8C /* GlobostoreAutoUpdate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GlobostoreAutoUpdate.podspec; path = ../GlobostoreAutoUpdate.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				78F7190920AE35190083464A /* globostore.plist */,
 			);
 			name = "Example for GlobostoreAutoUpdate";
 			path = GlobostoreAutoUpdate;
@@ -207,7 +210,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				431EE6F446A8FB0CBB30B540 /* [CP] Embed Pods Frameworks */,
+				74F0BA3252E7551F497D1EE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				78F7190A20AE35190083464A /* globostore.plist in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -330,7 +334,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		431EE6F446A8FB0CBB30B540 /* [CP] Embed Pods Frameworks */ = {
+		74F0BA3252E7551F497D1EE1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

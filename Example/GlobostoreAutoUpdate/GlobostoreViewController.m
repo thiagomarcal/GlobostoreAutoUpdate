@@ -7,6 +7,7 @@
 //
 
 #import "GlobostoreViewController.h"
+#import <GlobostoreAutoUpdate/GlobostoreAutoUpdate.h>
 
 @interface GlobostoreViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    GlobostoreAutoUpdate *autoupdate = [[GlobostoreAutoUpdate alloc] init];
+    [autoupdate validateCurrentVersion:self];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -1,0 +1,16 @@
+PODS:
+  - GlobostoreAutoUpdate (0.1.0)
+
+DEPENDENCIES:
+  - GlobostoreAutoUpdate (from `../`)
+
+EXTERNAL SOURCES:
+  GlobostoreAutoUpdate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GlobostoreAutoUpdate: d4d86d31b2e59b2885ab743f5fb80cebc8576ffa
+
+PODFILE CHECKSUM: 1293bdbe0d01f4ce665769950f85c814501a522a
+
+COCOAPODS: 1.5.2

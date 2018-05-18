@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>appId</key>
+        <string>82d4b26f-80b6-4051-b8d5-1d84e0e6b420</string>
+        <key>appKey</key>
+        <string>$2a$04$H/EcxwOFGzQABewORMoMGuVDfe61z5CnTYCluDOVaO96n7KjEqOUW</string>
+        <key>appOs</key>
+        <string>ios</string>
+        <key>versionUrl</key>
+        <string>https://services.apps.tvglobo.com.br/rpc</string>
+        <key>method</key>
+        <string>CrudService.GetCurrentAppVersion</string>
+        <key>service</key>
+        <string>crud</string>
+        <key>downloadUrl</key>
+        <string>https://download.globostore.apps.tvglobo.com.br/</string>
+    </dict>
+</plist>
+

@@ -1,0 +1,6 @@
+framework module GlobostoreAutoUpdate {
+  umbrella header "GlobostoreAutoUpdate-umbrella.h"
+
+  export *
+  module * { export * }
+}
