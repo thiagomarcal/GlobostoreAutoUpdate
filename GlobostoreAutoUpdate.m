@@ -132,20 +132,11 @@ UIViewController *viewTemplate;
         
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         [prefs setObject:dowloadPath forKey:@"downloadPath"];
-        [prefs setObject:dowloadPath forKey:@"downloadPath"];
         
         [plistdict setObject:dowloadPath forKey:@"downloadPath"];
         [plistdict setObject:remoteVersion forKey:@"remoteVersion"];
         [plistdict writeToFile:filePath atomically:YES];
         
-        // Abrir Dialog
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Atualização"
-//                                                        message:@"Nova versão disponível, pressione ok pra atualizar o seu aplicativo."
-//                                                       delegate:self
-//                                              cancelButtonTitle:@"OK"
-//                                              otherButtonTitles:nil];
-//
-//        [alert show];
         
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Atualização" message:@"Nova versão disponível, pressione ok pra atualizar o seu aplicativo."
                                                                 preferredStyle:UIAlertControllerStyleAlert];
@@ -165,30 +156,6 @@ UIViewController *viewTemplate;
     NSLog(@"loginFailure:");
     // Do your actions
 }
-
-//- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-//
-//    // the user clicked OK
-//    if (buttonIndex == 0) {
-//
-//        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"globostore" ofType:@"plist"];
-//        NSMutableDictionary *plistdict = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
-//        NSString *downloadPath = plistdict[@"downloadPath"];
-//        NSString *remoteVersion = plistdict[@"remoteVersion"];
-//
-//        NSLog(@"teste click");
-//        UIApplication *application = [UIApplication sharedApplication];
-//        NSURL *URL = [NSURL URLWithString:downloadPath];
-//        [application openURL:URL options:@{} completionHandler:^(BOOL success) {
-//            if (success) {
-//                NSLog(@"Opened url");
-//                [plistdict setObject:remoteVersion forKey:@"localVersion"];
-//                [plistdict writeToFile:filePath atomically:YES];
-//            }
-//        }];
-//    }
-//}
-
 
 - (void) handleAlert {
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"globostore" ofType:@"plist"];
