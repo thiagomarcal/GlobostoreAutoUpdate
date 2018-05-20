@@ -128,12 +128,12 @@ UIViewController *viewTemplate;
         
         NSString *itms = @"itms-services://?action=download-manifest&url=";
         NSString *origin = [NSString stringWithFormat: @"%@%@", itms, downloadUrl];
-        NSString *dowloadPath = [NSString stringWithFormat: @"%@%@", origin, path];
+        NSString *downloadPath = [NSString stringWithFormat: @"%@%@", origin, path];
         
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-        [prefs setObject:dowloadPath forKey:@"downloadPath"];
+        [prefs setObject:downloadPath forKey:@"downloadPath"];
         
-        [plistdict setObject:dowloadPath forKey:@"downloadPath"];
+        [plistdict setObject:downloadPath forKey:@"downloadPath"];
         [plistdict setObject:remoteVersion forKey:@"remoteVersion"];
         [plistdict writeToFile:filePath atomically:YES];
         
@@ -163,16 +163,14 @@ UIViewController *viewTemplate;
         NSMutableDictionary *plistdict = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
         NSString *downloadPath = plistdict[@"downloadPath"];
         NSString *remoteVersion = plistdict[@"remoteVersion"];
+
+        BOOL success = [[UIApplication sharedApplication] openURL:(NSURL*)[NSURL URLWithString:downloadPath]];
+        if (success) {
+           NSLog(@"Opened url");
+           [plistdict setObject:remoteVersion forKey:@"localVersion"];
+           [plistdict writeToFile:filePath atomically:YES];
+        }
     
-        UIApplication *application = [UIApplication sharedApplication];
-        NSURL *URL = [NSURL URLWithString:downloadPath];
-        [application openURL:URL options:@{} completionHandler:^(BOOL success) {
-            if (success) {
-                NSLog(@"Opened url");
-                [plistdict setObject:remoteVersion forKey:@"localVersion"];
-                [plistdict writeToFile:filePath atomically:YES];
-            }
-        }];
 }
 
 @end
