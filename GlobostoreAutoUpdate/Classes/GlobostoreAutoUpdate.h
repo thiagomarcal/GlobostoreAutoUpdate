@@ -10,8 +10,6 @@
 
 @interface GlobostoreAutoUpdate : NSObject
 
-- (void)placePostRequestWithURL:(NSString *)action withData:(NSDictionary *)dataToSend;
-- (void) api:(NSDictionary *)data;
 - (void) validateCurrentVersion: (UIViewController *)view;
 
 @end

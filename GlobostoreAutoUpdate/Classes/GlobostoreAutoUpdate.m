@@ -73,19 +73,12 @@ UIViewController *viewTemplate;
                               [calledBy performSelector:failureCallback withObject:string];
                           } else {
                               NSLog(@"OK");
-                              
-                              NSDictionary *result = [NSDictionary dictionaryWithObjectsAndKeys:
-                                                      string, @"version",
-                                                      nil];
-                              
                               [calledBy performSelector:successCallback withObject:rawData];
                           }
                       }];
 }
 
 - (void) validateCurrentVersion: (UIViewController *)view {
-    
-    viewTemplate = view;
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"globostore" ofType:@"plist"];
     NSMutableDictionary *plistdict = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
@@ -106,7 +99,7 @@ UIViewController *viewTemplate;
 
 - (void)apiDidEnd:(id)result{
     
-    NSLog(@"loginDidEnd:");
+    NSLog(@"apiupdateDidEnd:");
     NSError* error;
     NSDictionary* responseDataDict = [NSJSONSerialization JSONObjectWithData:result
                                                                      options:kNilOptions
@@ -119,12 +112,14 @@ UIViewController *viewTemplate;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"globostore" ofType:@"plist"];
     NSMutableDictionary *plistdict = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
     
-    NSString *localVersion = plistdict[@"localVersion"];
     NSString *downloadUrl = plistdict[@"downloadUrl"];
+    NSNumber *prepareToUpload = plistdict[@"prepareToUpload"];
     
     NSString *bundleVersion = [NSString stringWithFormat:@"%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
     
-    if (localVersion == nil || localVersion != remoteVersion || bundleVersion != remoteVersion) {
+    if (bundleVersion != remoteVersion && !prepareToUpload) {
+        
+        [plistdict setValue:[NSNumber numberWithBool: NO] forKey:@"prepareToUpload"];
         
         NSString *itms = @"itms-services://?action=download-manifest&url=";
         NSString *origin = [NSString stringWithFormat: @"%@%@", itms, downloadUrl];
@@ -137,40 +132,53 @@ UIViewController *viewTemplate;
         [plistdict setObject:remoteVersion forKey:@"remoteVersion"];
         [plistdict writeToFile:filePath atomically:YES];
         
+        NSURL *link = [NSURL URLWithString:downloadPath];
         
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Atualização" message:@"Nova versão disponível, pressione ok pra atualizar o seu aplicativo."
+        NSString *messageTeste = [NSString stringWithFormat: @"%@ corrente: %@ disponível: %@", @"Nova versão disponível", bundleVersion, remoteVersion];
+
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Atualização" message:messageTeste
+                                    
+                                    
                                                                 preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                                               handler:^(UIAlertAction * action) {
-                                                                  [self handleAlert];
+                                                                  [self handleAlert:link:filePath:plistdict];
                                                               }];
         
         [alert addAction:defaultAction];
-        [viewTemplate presentViewController:alert animated:YES completion:nil];
+        [[self currentView:viewTemplate] presentViewController:alert animated:YES completion:nil];
         
     }
     
 }
 
 - (void)apiFailure:(id)result{
-    NSLog(@"loginFailure:");
-    // Do your actions
+    NSLog(@"apiUpdateFailure:");
 }
 
 
-- (void) handleAlert {
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"globostore" ofType:@"plist"];
-        NSMutableDictionary *plistdict = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
-        NSString *downloadPath = plistdict[@"downloadPath"];
-        NSString *remoteVersion = plistdict[@"remoteVersion"];
+- (void) handleAlert:(NSURL *)downloadLink :(NSString*)filePath :(NSMutableDictionary*)plistdict  {
+    BOOL success = [[UIApplication sharedApplication] openURL:downloadLink];
+    if (success) {
+        NSLog(@"Opened url");
+        [plistdict setValue:[NSNumber numberWithBool: YES] forKey:@"prepareToUpload"];
+    }
+}
 
-        BOOL success = [[UIApplication sharedApplication] openURL:(NSURL*)[NSURL URLWithString:downloadPath]];
-        if (success) {
-           NSLog(@"Opened url");
-           [plistdict setObject:remoteVersion forKey:@"localVersion"];
-           [plistdict writeToFile:filePath atomically:YES];
-        }
-    
+- (UIViewController*) topMostController {
+    UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    while (topController.presentedViewController) {
+        topController = topController.presentedViewController;
+    }
+    return topController;
+}
+
+- (UIViewController*) currentView: (UIViewController *)view {
+    if (view == nil) {
+         return [self topMostController];
+    } else {
+        return view;
+    }
 }
 
 @end
