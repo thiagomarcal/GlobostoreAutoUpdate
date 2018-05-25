@@ -117,8 +117,8 @@ UIViewController *viewTemplate;
     
     NSString *bundleVersion = [NSString stringWithFormat:@"%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
     
-    if (bundleVersion != remoteVersion && !prepareToUpload) {
-        
+    if (![bundleVersion isEqualToString:remoteVersion] && !prepareToUpload) {
+
         [plistdict setValue:[NSNumber numberWithBool: NO] forKey:@"prepareToUpload"];
         
         NSString *itms = @"itms-services://?action=download-manifest&url=";
